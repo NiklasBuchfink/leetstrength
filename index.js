@@ -1714,6 +1714,9 @@ var plugin = {
   saveMessages: async ({ settings, nodeishFs, messages }) => {
     const result = {};
     for (const message of messages) {
+      if (message.id === "auth_switch_to_login") {
+        console.log(message);
+      }
       const serialized = serializeMessage(message);
       for (const [languageTag, value] of Object.entries(serialized)) {
         if (result[languageTag] === void 0) {
@@ -1723,11 +1726,11 @@ var plugin = {
       }
     }
     for (const [languageTag, messages2] of Object.entries(result)) {
-      console.log(languageTag);
       const path = settings["plugin.inlang.messageFormat"].pathPattern.replace(
         "{languageTag}",
         languageTag
       );
+      console.log(languageTag);
       await createDirectoryIfNotExits({ path, nodeishFs });
       await nodeishFs.writeFile(
         settings["plugin.inlang.messageFormat"].pathPattern.replace("{languageTag}", languageTag),
