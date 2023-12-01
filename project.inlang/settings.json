@@ -3,9 +3,9 @@
   "sourceLanguageTag": "en",
   "languageTags": ["en", "de"],
   "modules": [
-    "./index.js"
+    "https://cdn.jsdelivr.net/npm/@inlang/plugin-json@4/dist/index.js",
   ],
-  "plugin.inlang.messageFormat": {
+  "plugin.inlang.json": {
     "pathPattern": "/packages/lang/{languageTag}.json"
   }
 }
