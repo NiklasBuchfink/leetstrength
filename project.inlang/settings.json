@@ -1,5 +1,5 @@
 {
-  "$schema": "https://inlang.com/schema/project-settings",
+  "$schema": "https://inlang.com/schema/inlang-message-format",
   "sourceLanguageTag": "en",
   "languageTags": ["en", "de"],
   "modules": [
