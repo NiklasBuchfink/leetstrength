@@ -3,7 +3,7 @@
   "sourceLanguageTag": "en",
   "languageTags": ["en", "de"],
   "modules": [
-    "https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@latest/dist/index.js"
+    "./index.js"
   ],
   "plugin.inlang.messageFormat": {
     "pathPattern": "/packages/lang/{languageTag}.json"
