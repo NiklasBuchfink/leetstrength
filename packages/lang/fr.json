@@ -1,6 +1,6 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
-  "auth_switch_to_login": "Vous avez déjà un compte?",
+  "auth_switch_to_login": "Êtes-vous déjà connecté ?",
   "auth_switch_to_register": "Vous n'avez pas de compte ? Inscrivez-vous",
   "auth_login": "Se connecter",
   "auth_login_action": "Se connecter",
